@@ -1,0 +1,497 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif, 'Noto Sans JP', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+  img{
+      width: 100%;
+      vertical-align: bottom;
+  }
+
+  .flex{
+      display:flex;
+  }
+  .main-container{
+    width: 1100px;
+    margin: 0 auto;
+  }
+  .section-header{
+    font-size: 3.2rem;
+    color: #000000;
+    letter-spacing: 1.5px;
+    padding-bottom: 30px;
+  }
+  .section-text{
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2;
+  }
+  #vision,#message,#company,#footer{
+    margin-top: 120px;
+  }
+
+/* -------- リンクボタン ------- */
+.page-jump{
+    width: 160px;
+    height: 36px;
+    background-color: #000000;
+    text-align: center;
+    text-align: center;
+    padding-top: 12.5px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+.page-jump a{
+    color: #fff;
+    font-size: 1.2rem;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ------------------------------------------ header -------------------------------------- */
+
+
+.header{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+.header-logo{
+    width: 260px;
+    height: 28px;
+    padding-top: 30px;
+    padding-left: 58px;
+    
+}
+.globalmenuSp-mask{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 100%;
+    opacity: 0.8;
+    background-color: #222222;
+    z-index: 9;
+}
+/*　ハンバーガーボタン　*/
+.berger-menu-text{
+    display : block;
+    position: fixed;
+    z-index : 100;
+    right : 50px;
+    top   : 40px;
+    color: #fff;
+}
+.hamburger {
+    display : block;
+    position: fixed;
+    z-index : 100;
+    right : 97px;
+    top   : 37.5px;
+    width : 22px;
+    height: 22px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 100%;
+    height  : 2px ;
+    background : #fff;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 0;
+  }
+  .hamburger span:nth-child(2) {
+    top: 5px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 10px;
+  }
+  
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top : 8px;
+    background :#fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+  
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 8px;
+    background :#fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+  
+  nav.globalMenuSp {
+    position: fixed;
+    z-index : 10;
+    top  : 0;
+    right : 0;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    width: 36.111111%;
+    opacity: 0;
+    transition: opacity .6s ease, visibility .6s ease;
+    visibility: collapse;
+    height: 100%;
+  }
+  
+  nav.globalMenuSp ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    margin-top: 180px;
+  }
+  
+  nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: .4s all;
+    height: 80px;
+  }
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+  }
+  nav.globalMenuSp ul li:hover{
+    background :#ddd;
+  }
+  nav.globalMenuSp ul .menu-logo:hover{
+    background-color: rgba(0,0,0,0);
+  }
+  
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #fff;
+    padding: 1em 0;
+    font-size: 2rem;
+    line-height: 40px;
+    text-decoration :none;
+  }
+  
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    opacity: 100;
+    visibility: visible;
+  }
+  .berger-logo{
+      width: 42.15px;
+      margin: 0 auto;
+  }
+  .berger-mask{
+    width: 90px;
+    height: 20px;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    right: 45px;
+    top: 34px;
+    z-index: 1;
+    display: none;
+  }
+/* ------------------------------------------ main -------------------------------------- */
+
+/* -------- first view -------- */
+
+.fv{
+    height: 464px;
+}
+
+.fv-back-image{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 76.3889%;
+    height: 387px;
+    z-index: 5;
+    background: url(../images/heading-img.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.fv-contents{
+    position: absolute;
+    top: 156px;
+    right: 170px;
+    z-index: 8;
+}
+
+.fv-text{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.fv-text-bold{
+    font-size: 7.2rem;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.fv-mask{
+    width: 56vw;
+    height: 464px;
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+}
+/* -------- Vision -------- */
+
+#vision{
+  margin-left: 225px;
+}
+.vision-headline{
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+}
+/* -------- CEO-message -------- */
+#message{
+  position: relative;
+  height: 900px;
+}
+.ceo-image{
+  width: 420px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.ceo-contents{
+  width: 770px;
+  position: absolute;
+  top: 144px;
+  right: 0;
+  background-color: #F0F0F0;
+  padding: 120px 185px 90px;
+  z-index: 10;
+}
+/* -------- Company -------- */
+.company-info{
+  list-style: none;
+  border-top: 1px solid #DDDDDD;
+  padding-bottom: 40px;
+}
+.info-item{
+  display: flex;
+  height: 56px;
+  align-items: center;
+  border-bottom: 1px solid #DDDDDD;
+  width: 800px;
+  margin-left: 300px;
+}
+.item-headline{
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.item-text{
+  font-size: 1.6rem;
+}
+.two-letters{
+  margin-right: 112px;
+}
+.three-letters{
+  margin-right: 96px;
+}
+.four-letters{
+  margin-right: 80px;
+}
+.five-letters{
+  margin-right: 64px;
+}
+.ggmap{
+  width: 100%;
+  height: 360px;
+  position: relative;
+}
+.google-map{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* ------------------------------------------ footer -------------------------------------- */
+#footer{
+  height: 50px;
+  background-color: #525252;
+  text-align: center;
+}
+.footer-text{
+  font-size: 1rem;
+  color: #fff;
+  display: block;
+  line-height: 50px;
+}
+/* ------------------------------------------ レスポンシブ -------------------------------------- */
+/* -------------- tablet --------------- */
+  @media (max-width: 780px){
+    #vision,#message,#company,#footer{
+      margin-top: 80px;
+    }
+    /* ------- header ------- */
+    .header-logo{
+      width: 189px;
+      padding-top: 30px;
+      padding-left: 30px;
+    }
+    /* ------- fv ------- */
+    .fv{
+      height: 615px;
+    }
+    .fv-back-image{
+      width: 587px;
+      height: 529px;
+    }
+    .fv-mask{
+      width: 406px;
+      height: 615px;
+    }
+    .fv-contents{
+      top: 220px;
+      right: 98px;
+    }
+    .fv-text-bold{
+      font-size: 5.2rem;
+    }
+    .fv-text{
+      font-size: 1.6rem;
+    }
+    /* ------- ハンバーガー ------- */
+    .hamburger{
+      top: 34.5px;
+      left: 677px;
+    }
+    .berger-menu-text{
+      right: 30px;
+      top: 34.5px;
+    }
+    /* ------------- main ------------- */
+    .main-container{
+      width: 768px;
+      padding: 0 30px;
+    }
+    /* ------- vision ------- */
+    #vision{
+      margin-left: 120px;
+    }
+    /* ------- message ------- */
+    .ceo-image{
+      width: 320px;
+    }
+    .ceo-contents{
+      width: 494px;
+      height: 687px;
+      padding: 109px 39px 78px;
+      top: 131px;
+      left: 214px;
+    }
+    /* ------- company ------- */
+    .info-item{
+      width: 678px;
+      margin-left: 10px;
+    }
+    .ggmap{
+      width: 708px;
+      height: 230px;
+    }
+
+
+  }
+/* ------- sp ------- */
+  @media (max-width: 376px){
+    #vision,#message,#company,#footer{
+      margin-top: 80px;
+    }
+    .section-header{
+      font-size: 3.1rem;
+    }
+    .section-text{
+      font-size: 1.4rem;
+    }
+    /* ------- header ------- */
+    .header-logo{
+      width: 189px;
+      padding-top: 30px;
+      padding-left: 30px;
+    }
+    /* ------- fv ------- */
+    .fv{
+      height: 450px;
+    }
+    .fv-back-image{
+      width: 287px;
+      height: 387px;
+    }
+    .fv-mask{
+      width: 198px;
+      height: 450px;
+    }
+    .fv-contents{
+      top: 149px;
+      right: 29px;
+    }
+    .fv-text-bold{
+      font-size: 5.2rem;
+    }
+    .fv-text{
+      font-size: 1.6rem;
+    }
+    /* ------- ハンバーガー ------- */
+    .hamburger{
+      top: 24px;
+      left: 300px;
+    }
+    .berger-menu-text{
+      right: 15px;
+      top: 24px;
+    }
+    /* ------------- main ------------- */
+    .main-container{
+      width: 375px;
+      padding: 0 15px;
+    }
+    /* ------- vision ------- */
+    #vision{
+      margin-left: 0;
+    }
+    /* ------- message ------- */
+    .ceo-image{
+      width: 340px;
+    }
+    .ceo-contents{
+      width: 345px;
+      height: 800px;
+      padding: 126px 28px 80px;
+      top: 129px;
+      left: 0;
+    }
+    /* ------- company ------- */
+    .info-item{
+      width: 100%;
+      margin-left: 0;
+    }
+    .ggmap{
+      width: 100%;
+      height: 470px;
+    }
+  }
