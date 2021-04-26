@@ -379,7 +379,7 @@ html{
     /* ------- ハンバーガー ------- */
     .hamburger{
       top: 34.5px;
-      left: 677px;
+      right: 69px
     }
     .berger-menu-text{
       right: 30px;
@@ -459,7 +459,7 @@ html{
     /* ------- ハンバーガー ------- */
     .hamburger{
       top: 24px;
-      left: 300px;
+      right: 54px;
     }
     .berger-menu-text{
       right: 15px;
