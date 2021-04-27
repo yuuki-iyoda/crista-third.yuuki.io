@@ -385,6 +385,9 @@ html{
       right: 30px;
       top: 34.5px;
     }
+    nav.globalMenuSp{
+      width: 50%;
+    }
     /* ------------- main ------------- */
     .main-container{
       width: 768px;
